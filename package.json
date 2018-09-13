@@ -1,0 +1,28 @@
+{
+  "name": "commision-api-express",
+  "version": "1.0.0",
+  "description": "A Test graphql Api for managing an artist commision.",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel src -w -d dist --copy-files && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bookshop-Interactive/mythical-creature-api-express.git"
+  },
+  "author": "Connor Minielly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bookshop-Interactive/mythical-creature-api-express/issues"
+  },
+  "homepage": "https://github.com/Bookshop-Interactive/mythical-creature-api-express#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.16.2",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0"
+  }
+}
