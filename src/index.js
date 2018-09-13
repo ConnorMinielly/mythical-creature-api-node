@@ -10,7 +10,7 @@ import Mythics from './database/mythics';
 const options = {
   port: 3003,
   endpoint: '/mythics',
-  playground: '/mythics_playground',
+  playground: '/play',
 };
 
 const context = {
@@ -21,5 +21,17 @@ const context = {
 const server = new GraphQLServer({ typeDefs, resolvers, context });
 
 server.start(options, ({ port }) =>
-  console.log(`Server is fired 🔥 up on localhost:${port}`),
+  console.log(
+    `
+    Server is fired 🔥 up on http://localhost:${port}
+    Play 🎮  at http://localhost:${port}/play
+    Try Running:
+    query {
+      mythics {
+        name
+        description
+      }
+    }
+    `,
+  ),
 );
