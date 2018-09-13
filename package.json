@@ -1,5 +1,5 @@
 {
-  "name": "commision-api-express",
+  "name": "mythical-creature-api-express",
   "version": "1.0.0",
   "description": "A Test graphql Api for managing an artist commision.",
   "main": "index.js",
