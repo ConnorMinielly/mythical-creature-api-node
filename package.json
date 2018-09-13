@@ -1,5 +1,5 @@
 {
-  "name": "mythical-creature-api-express",
+  "name": "mythical-creature-api-node",
   "version": "1.0.0",
   "description": "A Test graphql Api for creating mythical creature records.",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bookshop-Interactive/mythical-creature-api-express.git"
+    "url": "git+https://github.com/Bookshop-Interactive/mythical-creature-api-node.git"
   },
   "author": "Connor Minielly",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Bookshop-Interactive/mythical-creature-api-express/issues"
+    "url": "https://github.com/Bookshop-Interactive/mythical-creature-api-node/issues"
   },
-  "homepage": "https://github.com/Bookshop-Interactive/mythical-creature-api-express#readme",
+  "homepage": "https://github.com/Bookshop-Interactive/mythical-creature-api-node#readme",
   "dependencies": {
     "graphql-yoga": "^1.16.2",
     "mongoose": "^5.2.14"
