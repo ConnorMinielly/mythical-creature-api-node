@@ -1,10 +1,11 @@
 {
   "name": "mythical-creature-api-express",
   "version": "1.0.0",
-  "description": "A Test graphql Api for managing an artist commision.",
+  "description": "A Test graphql Api for creating mythical creature records.",
   "main": "index.js",
   "scripts": {
-    "start": "babel src -w -d dist --copy-files && node dist/index.js"
+    "build": "babel src -d dist --copy-files",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,14 @@
   },
   "homepage": "https://github.com/Bookshop-Interactive/mythical-creature-api-express#readme",
   "dependencies": {
+    "graphql-import": "^0.7.1",
     "graphql-yoga": "^1.16.2",
     "mongoose": "^5.2.14"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
+    "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0"
   }
 }
