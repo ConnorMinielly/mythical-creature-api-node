@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_USER": "@mythics-mongo-user",
+    "MONGO_PASS": "@mythics-mongo-pass"
+  }
+}

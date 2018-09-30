@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 
 const creds = {
-  user: 'connor',
-  pass: 'mythicspass1',
+  user: process.env.MONGO_USER,
+  pass: process.env.MONGO_PASS,
 };
 
 export default mongoose.connect(
