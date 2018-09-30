@@ -1,8 +1,8 @@
-import { GraphQLServer } from 'graphql-yoga';
+import { ApolloServer } from 'apollo-server';
 import resolvers from './server/resolvers';
-import typeDefs from './server/mythics.js';
+import typeDefs from './server/mythics_schema';
 import db from './database/mongo';
-import Mythics from './database/mythics';
+import Mythics from './database/mythics_model';
 
 const options = {
   port: 3003,
@@ -15,9 +15,9 @@ const context = {
   Mythics,
 };
 
-const server = new GraphQLServer({ typeDefs, resolvers, context });
+const server = new ApolloServer({ typeDefs, resolvers, context });
 
-server.start(options, ({ port }) =>
+server.listen(options).then(({ port, url }) =>
   console.log(
     `
     Server is fired 🔥 up on http://localhost:${port}

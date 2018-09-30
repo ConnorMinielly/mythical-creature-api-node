@@ -3,13 +3,13 @@ export default {
     mythics: async (parent, args, { Mythics }) => {
       // TODO: Not Accounting For Possible Errors
       const allMythics = await Mythics.find();
-      console.log(allMythics);
+      // console.log(allMythics);
       return allMythics;
     },
     mythic: async (parent, { name }, { Mythics }) => {
       // TODO: Not Accounting For Possible Errors
       const oneMythics = await Mythics.findOne({ name });
-      console.log(oneMythics);
+      // console.log(oneMythics);
       return oneMythics;
     },
   },

@@ -1,4 +1,5 @@
-export default `
+import { gql } from 'apollo-server';
+export default gql`
   type Query {
     mythics: [Mythic!]!
     mythic(name: String): Mythic!
