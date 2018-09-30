@@ -11,8 +11,8 @@ https://mythical-creatures.now.sh/
 set up:
 
 ```bash
-git clone https://github.com/Bookshop-Interactive/mythical-creature-api-express.git
-cd mythical-creature-api-express
+git clone https://github.com/Bookshop-Interactive/mythical-creature-api-node.git
+cd mythical-creature-api-node
 yarn start
 ```
 
