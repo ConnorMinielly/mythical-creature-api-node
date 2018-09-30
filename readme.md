@@ -1,8 +1,12 @@
 # Mythical Creatures! Get'em!
 
-🦖  🦄  🐲  
+🦖 🦄 🐲
 
 This is a test project showing how one might use graphQL Yoga alongside mongoDB to create a simple graphQL API that allows for document creation as well as data fetching. The subject matter is mythical creatures because...They cool.
+
+### Live 📺 using now △
+
+https://mythical-creatures.now.sh/
 
 set up:
 
@@ -41,11 +45,13 @@ or
 
 ```graphql
 mutation {
-  summon(name: "Jackalope",
-    description: "A hare and an antelope got frisky!",
-    country: "USA, Texas",
-    powers: ["Hopping", "Wisdom", "Horn Strikes"],
-    weaknesses: ["Red Necks", "Hardcore Baptists"],
-    rank: 2)
+  summon(
+    name: "Jackalope"
+    description: "A hare and an antelope got frisky!"
+    country: "USA, Texas"
+    powers: ["Hopping", "Wisdom", "Horn Strikes"]
+    weaknesses: ["Red Necks", "Hardcore Baptists"]
+    rank: 2
+  )
 }
 ```
