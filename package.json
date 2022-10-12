@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Bookshop-Interactive/mythical-creature-api-node#readme",
   "dependencies": {
-    "apollo-server": "^2.1.0",
+    "apollo-server": "^2.25.4",
     "graphql": "^14.0.2",
     "mongoose": "^5.2.14"
   },
